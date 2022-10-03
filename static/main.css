@@ -38,11 +38,12 @@ h6 {
 }
 
 .article-title {
-    color: #444444;
+    color: #000;
 }
 
 a.article-title:hover {
-    color: #428bca;
+    background: #000;
+    color: #fff;
     text-decoration: none;
 }
 
