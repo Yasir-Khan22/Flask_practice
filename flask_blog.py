@@ -1,8 +1,8 @@
 # from distutils.log import debug
 # from turtle import title
 from flask import Flask, render_template, url_for
-
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'dde3df9f7f1c88768cf8736c6af3f3'
 
 posts = [
     {
