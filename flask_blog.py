@@ -2,10 +2,6 @@ from datetime import datetime
 from flask import Flask, render_template, url_for, flash, redirect
 from flask_sqlalchemy import SQLAlchemy
 from forms import RegisterationForm, LoginForm
-# from email.policy import default
-# from enum import unique
-# from operator import truediv
-# from turtle import title
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'dde3df9f7f1c88768cf8736c6af3f3'
@@ -23,7 +19,6 @@ class User(db.Model):
 
     def __repr__(self):
         return f"User('{self.username}, {self.password}, {self.image_file}')"
-
 
 
 class Post(db.Model):
